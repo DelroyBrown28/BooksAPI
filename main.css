@@ -1,6 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600&display=swap');
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+.top_contents {
+    position: relative;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    
+    justify-content: center;
+    
+}
+
+.maintitle {
+    position: relative;
+    margin: 0;
+    align-self: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.search_box {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#books {
+    position: relative;
+    border: none;
+    width: 15%;
+    outline: none;
+    padding: 5px;
+    border-bottom: 1px solid lightseagreen;
+}
+
+.search_button {
+    position: relative;
+    margin-top: 10px;
+    border: none;
+    border: 1px solid lightseagreen;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    height: 40px;
+    width: 15%;
+    cursor: pointer;
+}
+
+
 #result {
-    position: absolute;
-    left: 20%;
-    text-align: center;
-    background-color: green;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    
+    
+}
+
+.book_title {
+    position: relative;
+    margin: 0;
+    font-size: 1.2em;
+    
+}
+
+.book_author {
+    position: relative;
+    
+    font-size: 0.7em;
+    font-weight: 400;
+
+}
+
+.search_button:hover {
+    background-color: lightseagreen;
+    color: #fff;
+}
+
+.search_button:active {
+    background-color: transparent;
+    color: #000;
 }
