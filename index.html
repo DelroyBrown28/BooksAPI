@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./JS/script.js" type="text/javascript"></script>
     <title>The ultimate Book Search!</title>
@@ -17,11 +18,22 @@
     </div>
 
     <form id="myform" class="search_box">
-        <input type="search" id="books" placeholder="Search books here...">
+        <input type="search" id="bookSearch" placeholder="Search books here...">
 
-        <button class="search_button">Enlighten Me!</button>
+        <button class="search_button"><i class="fas fa-search"></i></button>
     </form>
-    <div id="result" class="found_books"></div>
+    <div id="result">
+
+        <div class="single_book">
+            <div class="book_title"></div>
+            <div class="book_author"></div>
+            <div class="book_image"></div>
+        </div>
+
+
+
+    </div>
+
 
 </body>
 

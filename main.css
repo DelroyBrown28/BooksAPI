@@ -6,98 +6,112 @@ html {
     height: 100%;
     margin: 0;
     display: flex;
+    align-items: center;
     flex-flow: column;
     font-family: 'Montserrat', sans-serif;
-    
 
+
+}
+
+.theShadowMonster {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        0 12.5px 10px rgba(0, 0, 0, 0.035),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        0 100px 80px rgba(0, 0, 0, 0.07);
+
+        transition: 1s;
+
+}
+
+.theSubtleShadow {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+
+        transition: 1s;
+}
+
+.top_contents,
+#myform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .top_contents {
     position: relative;
-    width: 100%;
-    height: 15%;
-    display: flex;
-    
-    justify-content: center;
-    
+    font-size: 1.7em;
+    margin-top: 20px;
+
 }
 
-.maintitle {
+#myform {
     position: relative;
-    margin: 0;
-    align-self: center;
-    font-size: 2em;
-    font-weight: 400;
-}
-
-.search_box {
-    position: relative;
-    width: 100%;
-    height: 10%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-flow: column;
+    margin-top: 30px;
+
+
 }
 
-#books {
+#bookSearch {
     position: relative;
     border: none;
-    width: 15%;
+    width: 355px;
+    height: 40px;
     outline: none;
-    padding: 5px;
-    border-bottom: 1px solid lightseagreen;
+    text-align: center;
+    font-size: 1em;
+    border-bottom: 1px solid lightcoral;
 }
 
 .search_button {
     position: relative;
-    margin-top: 10px;
+    margin-top: 20px;
     border: none;
-    border: 1px solid lightseagreen;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    border: 1px solid lightcoral;
     background-color: transparent;
-    height: 40px;
-    width: 15%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    cursor: pointer;
     outline: none;
     transition: 0.3s;
-    cursor: pointer;
 }
 
+.fa-search {
+    font-size: 2.5em;
+    color: lightcoral;
+}
 
 #result {
     position: relative;
-    width: 100%;
-    height: 60%;
+    width: 50%;
+    height: 70%;
+    margin-top: 20px;
+    overflow: auto;
     display: flex;
     align-items: center;
-    flex-flow: column;
-    
-    
-}
+    justify-content: center;
+    text-align: center;
 
-.book_title {
-    position: relative;
-    margin: 0;
-    font-size: 1.2em;
-    
-}
-
-.book_author {
-    position: relative;
-    
-    font-size: 0.7em;
-    font-weight: 400;
 
 }
 
-.search_button:hover {
-    background-color: lightseagreen;
-    color: #fff;
+::-webkit-scrollbar {
+    width: 0px;
 }
 
-.search_button:active {
-    background-color: transparent;
-    color: #000;
+input::-webkit-scrollbar {
+    display: none;
+}
+
+.search_button:active>.fa-search {
+    font-size: 3em;
 }
