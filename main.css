@@ -60,6 +60,8 @@ html {
     background-color: transparent;
     height: 40px;
     width: 15%;
+    outline: none;
+    transition: 0.3s;
     cursor: pointer;
 }
 
